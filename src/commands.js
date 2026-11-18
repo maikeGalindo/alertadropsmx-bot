@@ -58,9 +58,9 @@ export async function handleCommand(cmd, args = []) {
       return listByCategory(badges, query);
     }
 
-    case "ayuda":
-    case "help":
     case "comandos":
+    case "comnd":
+    case "cmd":
       return helpText();
 
     default:
