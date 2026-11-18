@@ -1,0 +1,20 @@
+{
+  "name": "alertadropsmx-bot",
+  "version": "1.0.0",
+  "description": "Bot de Twitch + Discord para AlertaDropsMX - Anuncios y comandos de insignias",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
+    "tmi.js": "^1.8.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
