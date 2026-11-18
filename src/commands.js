@@ -148,9 +148,9 @@ function badgeInfo(badges, query) {
   const text = [
     `${statusEmoji} **${b.name}**`,
     `Estado: ${b.status} | Tipo: ${typeLabel}`,
-    `Categoría: ${b.category || "—"}`,
-    `Cómo: ${b.claimMethod || "—"}`,
-    `Inicio: ${starts} | Fin: ${ends} (${left})`,
+    `| Categoría: ${b.category || "—"}`,
+    `| Cómo conseguirla: ${b.claimMethod || "—"}`,
+    `| Inicio: ${starts} | Fin: ${ends} (${left})`,
   ].join("\n");
 
   return {
@@ -198,11 +198,11 @@ function listByCategory(badges, category) {
 function helpText() {
   const text = [
     "📋 Comandos de AlertaDropsMX:",
-    "!activas / !insignias  → Lista de insignias activas",
-    "!expiran / !pronto     → Las que terminan pronto",
-    "!badge <nombre>        → Info detallada de una insignia",
-    "!categoria <juego>     → Insignias de una categoría",
-    "!ayuda                 → Este mensaje",
+    "< !activas / !insignias  → Lista de insignias activas",
+    "< !expiran / !pronto  → Las que terminan pronto",
+    "< !badge <nombre>  → Info detallada de una insignia",
+    "< !categoria <juego>  → Insignias de una categoría",
+    "< !cmd   → Este mensaje",
   ].join("\n");
 
   return {
